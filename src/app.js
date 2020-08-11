@@ -27,9 +27,7 @@ server.use(express.urlencoded({extended:false}));
 
 //rutas del servidor
 
-server.get('/',(req,res)=>{
-    res.render('index');
-})
+server.use('/conductores', require('./routes/conductor.route'));
 
 //archivos estaticos
 

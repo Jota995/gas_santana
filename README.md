@@ -1,5 +1,10 @@
-# gas_santana
-basic proyect in nodejs
+# GAS SANTANA
+
+- Empresa en el rubro de la venta y distribución de bidones de gas
+
+# TECNOLOGIAS
+
+- Proyecto basico para la gestion de ventas de bidones de gas desarrollandose en "NODEJS" con base de datos no-sql "MONGODB"
 
 # MODULOS DE DEPENDENCIA
 
@@ -8,3 +13,4 @@ basic proyect in nodejs
 - handlebars
 - express-handlebars
 - @handlebars/allow-prototype-access
+
