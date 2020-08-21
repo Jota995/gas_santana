@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: none;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: blueviolet;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 0.2rem;
+    text-align: left;
+}
+
+@media only screen and (max-width: 414px){
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color:#F9C423;
+        height: 100vh;
+        width: 100%;
+        padding: 0.5rem 0rem;
+    }
+    header{
+        background-color: #F3982F;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+        width: 100%;
+        height: 5%;
+        margin-bottom: 0.5rem;
+    }
+    .logo, .usuario{
+        display: flex;
+        align-items: center;
+    }
+    .logo i, .usuario i{
+        font-size:1.5rem;
+        margin-right: 1rem;
+
+    }
+    .logo span, .usuario span{
+        font-weight: bold;
+
+    }
+
+    main{
+        background-color: #F3982F;
+        height: 95%;
+        padding: 1rem 1rem;
+    }
+
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 5%;
+    }
+
+    .main-header .fecha{
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .main-header .menu{
+        font-size: 1.5rem;
+    }
+
+    .content{
+        height: 95%;
+    }
+
+    .content-header{
+        background-color: #D98729;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 0.5rem;
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+        height: 5%;
+    }
+
+    .content-info{
+        background-color: #D98729;
+        height: 95%;
+        overflow: auto;
+    }
+
+    .content-info .title{
+        width: 100%;
+        display: flex;
+        font-weight: bold;
+        padding: 0.5rem 0rem;
+        background-color: #ec932c;
+    }
+
+    .estado{
+        width: 15%;
+        text-align: center;
+    }
+    .cliente{
+        width: 55%;
+        text-align: center;
+    }
+    .opcion{
+        width: 30%;
+        text-align: center;
+    }
+
+    .card{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ff9925;
+    }
+
+    .card .card-status{
+        width: 15%;
+        text-align: center;
+        font-size: 2rem;
+        color: green;
+    }
+
+    .card .card-client-name{
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .card .card-options{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .content-info-detalle{
+        background: cadetblue;
+        padding: 0.5rem 0.5rem;
+        height: 100%;
+    }
+    .info-header{
+        background-color: darkgray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 16.66666667%;
+    }
+    
+    .info-fecha{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-fecha div input{
+        text-align: center;
+    }
+
+    .info-estado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-estado i{
+        color: chartreuse;
+        font-size: 1.8rem;
+    }
+    .info-direccion{
+        background-color: firebrick;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 16.66666667%;
+    }
+
+    .info-direccion div{
+        display: flex;
+        width: 100%;
+    }
+
+    .info-direccion div input{
+        width: 90%;
+        text-align: center;
+    }
+
+    .info-direccion div i{
+        width: 10%;
+        text-align: center;
+    }
+
+    .info-precio{
+        display: flex;
+        width: 100%;
+        height: 22.66666667%;
+        background-color: greenyellow;
+    }
+
+    .info-precios-table{
+        width: 60%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .info-carga-gas{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+    }
+    .info-carga-gas span{
+        text-align: center;
+    }
+
+    .info-carga-gas input{
+        text-align: center;
+    }
+
+    .info-telefono{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: indianred;
+        width: 100%;
+        height: 10.66666667%;
+    }
+
+    .info-telefono div{
+        display: flex;
+    }
+    .info-telefono div i{
+        padding-left: 1rem;
+        width: 40%;
+    }
+    .info-telefono div input{
+        width: 60%;
+        text-align: center;
+    }
+    .info-dato-extra{
+        display: flex;
+        width: 100%;
+        height: 27.66666667%;
+        flex-direction: column;
+        background: darkblue;
+    }
+
+    .info-dato-extra span{
+        height: 20%;
+    }
+
+    .info-dato-extra textarea{
+        height: 70%;
+    }
+
+    .info-button-volver{
+        display: flex;
+        width: 100%;
+        height: 5.66666667%;
+        background-color: darkgreen;
+    }
+
+    .info-button-volver button{
+        width: 100%;
+    }
+}
