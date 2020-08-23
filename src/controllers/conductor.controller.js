@@ -2,12 +2,13 @@ const conductorModel = require('../models/conductor.model');
 
 class Conductor {
     async getAllConductores(req, res) {
-        try {
+        /*try {
             const conductores = await conductorModel.find();
             res.send(conductores);
         } catch (err) {
             res.send(err);
-        }
+        }*/
+        res.render('conductores');
     }
 
     async getOneConductor(req, res) {

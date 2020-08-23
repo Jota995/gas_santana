@@ -48,3 +48,27 @@ document.querySelector('.tabs').addEventListener('click', event => {
 
     }
 })
+
+let form = document.querySelector('.form-register');
+let progressbar__option = document.querySelectorAll('.progressbar__option');
+
+form.addEventListener('click', e =>{
+    let element = e.target;
+    let isButtonNext = element.classList.contains('step__button--next');
+    let isButtonBack = element.classList.contains('step__button--back');
+    if(isButtonNext || isButtonBack){
+        let currentStep =  document.querySelector(`#step-${element.dataset.step}`);
+        let jumpStep =  document.querySelector(`#step-${element.dataset.to_step}`);
+        
+        currentStep.classList.remove('step-active');
+        jumpStep.classList.add('step-active');
+
+        if(isButtonNext){
+            currentStep.classList.add('step-to-left');
+            progressbar__option[element.dataset.to_step-1].classList.add('progressbar__option-active');
+        }else{
+            jumpStep.classList.remove('step-to-left');
+            progressbar__option[element.dataset.step-1].classList.remove('progressbar__option-active');
+        }
+    }
+})
